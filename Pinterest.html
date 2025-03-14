@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project of Pinterest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white mt-3" style="padding: 5px; height: 50px;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="pinterest.png" alt="Pinterest logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="#">Explore</a>
+                    </li>
+                </ul>
+
+                <!-- Liens à droite -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">Business</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold px-3" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link border-end border-1 fw-bold fs-5 px-3" href="#">Blog</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold rounded-5 btn btn-danger text-white px-3" href="#">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-5 btn btn-secondary ms-3 px-3 fw-bold" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="text-center fw-bold text-dark">
+            <h1>Get your next</h1>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <img src="https://media.istockphoto.com/id/1893527682/photo/woman-standing-in-front-of-glowing-portals.jpg"
+                        class="mx-2" width="400px" height="400px" alt="Image 1">
+                    <img src="https://media.istockphoto.com/id/1249648622/photo/hacker-standing-in-futuristic-gallery-interior.jpg"
+                        class="img-fluid mx-2" width="150px" alt="Image 2">
+                    <img src="https://media.istockphoto.com/id/1295633127/photo/grilled-chicken-meat-and-fresh-vegetable-salad.jpg"
+                        class="img-fluid mx-2" width="150px" alt="Image 3">
+                    <img src="https://media.istockphoto.com/id/1463643346/photo/salad-with-chicken-meat.jpg"
+                        class="img-fluid mx-2" width="150px" alt="Image 4">
+                    <img src="https://www.istockphoto.com/resources/images/PhotoFTLP/P5-NOV-iStock-2158268393.jpg"
+                        class="img-fluid mx-2" width="150px" alt="Image 5">
+                    <img src="https://media.istockphoto.com/id/1162898563/photo/chicago-urban-skyscrapers.jpg"
+                        class="img-fluid mx-2" width="150px" alt="Image 6">
+                    <img src="https://media.istockphoto.com/id/1255683032/photo/woman-looking-stock-market-data-on-smart-phone.jpg"
+                        class="img-fluid mx-2" width="150px" alt="Image 7">
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <!-- Search section -->
+     
+    <div class="container-fluid mt-5 my-3 d-flex justify-content-between mb-5 " style="background-color: rgba(247, 211, 5, 0.616) ; padding: 50px;">
+        <div class=" position-relative" style="width: 100%;">
+            <img src="plat1.jpg" class="position-absolute top-0 start-0  me-auto"
+             style="height: 500px;width: 300px;; object-fit: cover; margin-left: 20%; border-radius: 20px;">
+            <img src="plat2.jpg" class="position-absolute left-50 start-50 " 
+            style="border-radius: 20px; z-index: -1; height: 400px; width: 150px; object-fit: contain;">
+            <img src="plat3.jpg" class="position-absolute top-50 start-0">
+            <img src="plat4.jpg" class="position-absolute top-50 start-50">
+        </div>
+        <div class="text-center me-5">
+            <h1 class="fw-bold mb-3" style="color: chocolate; font-size: 50px;">Search for an idea</h1>
+            <p class="fs-3" style="color: chocolate;">What do you want to try next? Think <br> of something you’re into—like “easy <br> chicken dinner”—and see what you <br> find.</p>
+            <button class="btn btn-danger rounded-5 mt-3 ">Explore</button>
+        </div>
+    </div>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
