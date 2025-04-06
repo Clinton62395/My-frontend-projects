@@ -308,6 +308,7 @@
             transform: translateY(20px);
         }
     }
+
     /* .image-container-with-text {
             position: relative;
             border-radius: 20px;
@@ -372,7 +373,7 @@
     </nav>
 
     <!-- Carousel -->
-    <div class="row" style="margin-top: 10%;">
+    <!-- <div class="row" style="margin-top: 10%;">
         <div class="col text-center">
             <h1 class="fw-bold" style="font-size: 50px;">Get Your Next</h1>
         </div>
@@ -382,7 +383,7 @@
         <div class="row">
             <div class="col text-center mt-5 mb-5">
                 <!-- SLIDES -->
-                <div class="carousel-inner">
+    <!-- <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
                         <h1 class="slide-text" style="font-size: 40px; color: blue;">Green Thumb Idea</h1>
                         <button class="btn btn-primary mt-3">Explore More</button>
@@ -406,7 +407,7 @@
                 </div>
 
                 <!-- INDICATEURS -->
-                <div class="carousel-indicators mt-3 mb-3">
+    <!-- <div class="carousel-indicators mt-3 mb-3">
                     <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
@@ -420,265 +421,412 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="container-fluid d-flex justify-content-center align-items-center">
-        <div class="row mb-5">
-            <div class=" col myimages">
-                <img src="image7.jpg" class="pinterest-image" width="400px" height="400px" alt="Image 1">
-            </div>
-            <div class="col">
-                <img src="image1.jpeg" class="pinterest-image1 " width="300px" height="400px" alt="Image 2">
-            </div>
-            <div class="col">
-                <img src="image3.jpeg" class="pinterest-image2" width="150px" height="150px" alt="Image 3">
-            </div>
-            <div class="col">
-                <img src="image2.jpeg" class=" pinterest-image3" width="100px" height="100px" alt="Image 4">
-            </div>
-            <div class="col">
-                <img src="image4.jpeg" class="pinterest-image4 " width="150px" height="150px" alt="Image 7">
-            </div>
-            <div class="col">
-                <img src="image5.jpeg" class=" pinterest-image5" width="300px" height="300px" alt="Image 5">
-            </div>
-            <div class="col">
-                <img src="images.jpeg" class=" pinterest-image6" width="400px" height="400px" alt="Image 6">
+    <!DOCTYPE html>
+    <html lang="en">
 
-            </div>
-        </div>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carousel Example</title>
+        <!-- Lien vers Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* Style des tirets sous les titres */
+            .carousel-item h1 {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
 
-    <div class="row justify-content-center align-items mb-3">
-        <div class="col text-center">
-            <p><i class="bi bi-arrow-down-short"></i></p>
-        </div>
-    </div>
+            .carousel-item hr {
+                border-top: 2px solid #000;
+                width: 50%;
+                margin: 0 auto;
+                transition: width 0.5s ease, border-color 0.5s ease;
+            }
 
-    <!-- Search section -->
+            /* Styles dynamiques pour les couleurs des tirets en fonction de la diapositive */
+            .carousel-item:nth-child(1) hr {
+                border-color: blue;
+            }
 
-    <div class="container-fluid" style="background-color: rgba(247, 211, 5, 0.616) ; padding: 50px;">
+            .carousel-item:nth-child(2) hr {
+                border-color: skyblue;
+            }
 
-        <div class="row align-items-center mt-0">
-            <div class="col text-center">
-                <p>here's how it works <i class="bi bi-chevron-down"></i></p>
-            </div>
-        </div>
-        <div class="row justify-content-between align-items-center">
+            .carousel-item:nth-child(3) hr {
+                border-color: chartreuse;
+            }
 
-            <div class="col text-start image-with-search" style="position: relative;">
-                <div> 
-                    <img src="plat1.jpg" alt="image" class="img1">
-                </div>
-                <div> 
-                    <img src="plat2.jpg" alt="image" class="img2" style="width: 400px; height: 400px;margin-left: 100px;">
-                </div>
-                <div> 
-                    <img src="plat3.jpg" alt="image" class="img3" style="position: absolute; top: 50px; left: 50%;">
-                </div>
-                <div>
-                     <img src="plat4.jpg" alt="image" class="img4" style="position: absolute; right: 50px;bottom: 10px;">
-                </div>
-                <div
-                    style="width: 300px; border-radius: 50px;background-color: white;padding: 20px;text-align: center; position: absolute; top: 50%; left: 10%;">
-                    <p><i class="bi bi-search"></i> easy chicken dinner</p>
-                </div>
-            </div>
+            .carousel-item:nth-child(4) hr {
+                border-color: purple;
+            }
 
-            <div class=" col text-center ">
-                <h1 class="fw-bold mb-3" style="color: chocolate; font-size: 50px;">Search for an idea</h1>
-                <p class="fs-3" style="color: chocolate;">What do you want to try next? Think <br> of something you’re
-                    into—like
-                    “easy <br> chicken dinner”—and see what you <br> find.</p>
-                <button class="btn btn-danger rounded-5 mt-3 ">Explore</button>
-            </div>
-        </div>
-    </div>
+            .carousel-item:nth-child(5) hr {
+                border-color: hotpink;
+            }
 
-    <!-- theird div -->
-    <div class="container-fluid mt-0 my-3 d-flex justify-content-between align-items-center mb-0 "
-        style="background-color: rgba(9, 212, 248, 0.171) ; padding: 50px;">
-        <div class="row">
-        <div class=" col text-start">
-            <h1 class="fw-bold mb-3 text-success" style=" font-size: 50px;">Save ideas you like</h1>
-            <p class="fs-3 text-success">Collect your favorit so you can <br> get back to them later.</p>
-            <button class="btn btn-danger rounded-5 mt-3 ">Explore</button>
-        </div>
-    </div>
-        <!-- <div class="image-container">
-            <img src="plat1.jpg" alt="image" class="img1">
-            <img src="plat2.jpg" alt="image" class="img2">
-            <img src="plat3.jpg" alt="image" class="img3">
-            <img src="plat4.jpg" alt="image" class="img4">
-            <img src="plat center.jpg" alt="image" class="center-img" alt="image">
-        </div> -->
-   
+            /* div images text styling */
+            .image-text {
+                color: white;
+            }
+        </style>
+    </head>
 
-    <!-- <div class="container mt-4"> -->
-        <div class="row cols-md-3 justify-content-end align-items-center text-end">
-            <!-- Image principale -->
-            <div class="col">
-                <div class="image-container image-container-with-text1">
-                    <img src="http://bit.ly/41YePs6" alt="Fern future home vibes">
-                    <div class="image-text">Fern future home vibes</div>
-                </div>
+    <body>
+
+        <!-- Carrousel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <!-- Indicateurs (les boutons ronds de navigation) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
             </div>
 
-            <!-- Petites images -->
-            <div class="col">
-                <div class="image-container image-container-with-text">
-                    <img src="https://cdn.hellowatt.fr/media/uploads/zinnia/2021/03/08/garanties-assurance-habitation-maison-1.jpg" alt="My Scandinavian bedroom">
-                    <div class="image-text">My Scandinavian bedroom</div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="image-containerimage-container-with-text2 ">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA8uFGmDYA9q5RspENNWH-DOfX6BPboC8tXA&s" alt="The deck of my dreams">
-                    <div class="image-text">The deck of my dreams</div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="image-container image-container-with-text3">
-                    <img src="https://cdn.langeek.co/photo/22179/original/house?type=jpeg" alt="Serve my drinks in style">
-                    <div class="image-text">Serve my drinks in style</div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="image-container image-container-with-text4">
-                    <img src="https://images.adsttc.com/media/images/63e3/52b1/42a2/a83f/89d7/130e/newsletter/ad-classics-unite-d-habitation-le-corbusier_42.jpg?1675842241" alt="Our bathroom upgrade">
-                    <div class="image-text">Our bathroom upgrade</div>
-                </div>
-            </div>
-        </div>
-    <!-- </div> -->
-</div>
-
-    <!-- div foorth -->
-
-    <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col" style="background-color: rgba(218, 165, 32, 0.452); ">
-                <img src="data:image/jpeg;base64,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"
-                    alt="image" class="w-100 h-auto">
-            </div>
-            <div class="col " style="background-color: #e661a441; padding-top: 20%;">
-                <h1 class="fw-bold mb-3" style="color: chocolate; font-size: 50px;">See it, Make it, Try it, Do it</h1>
-                <p class="fs-3" style="color: chocolate;">The best part of Pinterest is discovering <br> new things and
-                    ideas from people <br> around the world.</p>
-                <button class="btn btn-danger rounded-5 mt-3 ">Explore</button>
-            </div>
-        </div>
-    </div>
-    <!-- div fiveth -->
-
-    <div class="container-fluid mybackround-div-five text-center ">
-        <div class="row align-items-center">
-            <div class="col">
-
-                <h1 class="text-white" style="font-size: 60px; line-height: 1.5; font-weight: bold;">
-                    Sign up to get <br> your ideas
-                </h1>
-
-            </div>
-            <!-- Formulaire -->
-            <div class="col mb-0 mt-5 text-start align-items-center" style="margin-right: 200px;">
-                <form class="w-60 ms-auto p-2 rounded-5 shadow-sm bg-white">
-                    <fieldset class="m-3 w-50  mx-auto ">
-                        <div class="text-center ">
-                            <img src="data:image/png;base64,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"
-                                width="50px" height="50px" alt="logo">
-                            <h2>Welcom to Pinterest</h2>
-                            <p>find new ideas to try</p>
+            <!-- Contenu des diapositives -->
+            <div class="carousel-inner">
+                <!-- Première diapositive -->
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h1 class="slide-text" style="color: blue;">Green Thumb Idea</h1>
                         </div>
+                    </div>
 
-                        <!-- Email -->
-                        <div class="mb-3 ">
-                            <label for="email" class="form-label">Email</label>
-                            <div class="input-group">
-                                <input type="email" class="form-control rounded-5 p-3" id="email" placeholder="Email"
-                                    style="width: 100px;">
+                </div>
+                <!-- Deuxième diapositive -->
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h1 class="slide-text" style="color: skyblue;">Weeknight Dinner Idea</h1>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- Troisième diapositive -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h1 class="slide-text" style="color: chartreuse;">Home Decor Idea</h1>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quatrième diapositive -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h1 class="slide-text" style="color: purple;">New Look Outfit</h1>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cinquième diapositive -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h1 class="slide-text" style="color: hotpink;">More Home Decor Ideas</h1>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="row mb-5">
+                    <div class=" col myimages">
+                        <img src="image7.jpg" class="pinterest-image" width="400px" height="400px" alt="Image 1">
+                    </div>
+                    <div class="col">
+                        <img src="image1.jpeg" class="pinterest-image1 " width="300px" height="400px" alt="Image 2">
+                    </div>
+                    <div class="col">
+                        <img src="image3.jpeg" class="pinterest-image2" width="150px" height="150px" alt="Image 3">
+                    </div>
+                    <div class="col">
+                        <img src="image2.jpeg" class=" pinterest-image3" width="100px" height="100px" alt="Image 4">
+                    </div>
+                    <div class="col">
+                        <img src="image4.jpeg" class="pinterest-image4 " width="150px" height="150px" alt="Image 7">
+                    </div>
+                    <div class="col">
+                        <img src="image5.jpeg" class=" pinterest-image5" width="300px" height="300px" alt="Image 5">
+                    </div>
+                    <div class="col">
+                        <img src="images.jpeg" class=" pinterest-image6" width="400px" height="400px" alt="Image 6">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items mb-3">
+                <div class="col text-center">
+                    <p><i class="bi bi-arrow-down-short"></i></p>
+                </div>
+            </div>
+
+            <!-- Search section -->
+
+            <div class="container-fluid" style="background-color: rgba(247, 211, 5, 0.616) ; padding: 50px;">
+
+                <div class="row align-items-center mt-0">
+                    <div class="col text-center">
+                        <p>here's how it works <i class="bi bi-chevron-down"></i></p>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+
+                    <div class="col text-start image-with-search" style="position: relative;">
+                        <div>
+                            <img src="plat1.jpg" alt="image" class="img1">
+                        </div>
+                        <div>
+                            <img src="plat2.jpg" alt="image" class="img2"
+                                style="width: 400px; height: 400px;margin-left: 100px;">
+                        </div>
+                        <div>
+                            <img src="plat3.jpg" alt="image" class="img3"
+                                style="position: absolute; top: 50px; left: 50%;">
+                        </div>
+                        <div>
+                            <img src="plat4.jpg" alt="image" class="img4"
+                                style="position: absolute; right: 50px;bottom: 10px;">
+                        </div>
+                        <div
+                            style="width: 300px; border-radius: 50px;background-color: white;padding: 20px;text-align: center; position: absolute; top: 50%; left: 10%;">
+                            <p><i class="bi bi-search"></i> easy chicken dinner</p>
+                        </div>
+                    </div>
+
+                    <div class=" col text-center ">
+                        <h1 class="fw-bold mb-3" style="color: chocolate; font-size: 50px;">Search for an idea</h1>
+                        <p class="fs-3" style="color: chocolate;">What do you want to try next? Think <br> of something
+                            you’re
+                            into—like
+                            “easy <br> chicken dinner”—and see what you <br> find.</p>
+                        <button class="btn btn-danger rounded-5 mt-3 ">Explore</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- theird div -->
+            <div class="container-fluid mt-0  mb-0 "
+                style="background-color: rgba(9, 212, 248, 0.171) ; padding: 50px;">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class=" col" style="position: absolute;">
+                        <h1 class="fw-bold mb-3 text-success text-start" style=" font-size: 50px;">
+                            Save ideas you like
+                        </h1>
+                        <p class="fs-5 text-success">
+                            Collect your favorit so you can <br> get back to them later.
+                        </p>
+                        <button class="btn btn-danger rounded-5 mt-3 ">
+                            Explore
+                        </button>
+                    </div>
+
+                    <div class="position-relative text-end">
+                        <div class=" text-center">
+                            <div class="image-container image-container-with-text">
+                                <img src="https://cdn.hellowatt.fr/media/uploads/zinnia/2021/03/08/garanties-assurance-habitation-maison-1.jpg"
+                                    alt="My Scandinavian bedroom"
+                                    style="width: 500px;height: 500px; position: relative;">
+                                <h1 class="image-text"
+                                    style="position: absolute; bottom:80px; left: 50px; font-size: 60px;">
+                                    Fern future home vibes
+                                </h1>
                             </div>
                         </div>
 
-                        <!-- password -->
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <div class="input-group">
-                                <input type="password" class="form-control rounded-5 p-3" id="password"
-                                    placeholder="Create a password">
-                                <span class="input-group-text">
-                                    <i class="fas fa-eye" id="togglePassword" style="cursor: pointer;"></i>
-                                </span>
+                        <div class="">
+                            <div class="image-container image-container-with-text1">
+                                <img src="https://www.each-a-cup.com/wp-content/uploads/2024/02/4.-Grape-Red-Tea.jpg"
+                                    alt="Fern future home vibes"
+                                    style="width: 250px; height: 250px;position: absolute;top: 30%; left: 60%; border-radius: 40px;">
+                                <h1 class="image-text" style="position: absolute;top: 40%;left: 80%;font-size: 25px;">
+                                    Serve my drinks in style
+                                </h1>
                             </div>
                         </div>
 
-                        <!-- Birthdate -->
-                        <div class="mb-3">
-                            <label for="dob" class="form-label">Birthdate</label>
-                            <div class="input-group">
-                                <input type="date" class="form-control rounded-5 p-3" id="date">
+                        <div class="">
+                            <div class="image-containerimage-container-with-text2 ">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDKhSWGAQrXbn8LoLpHTcmDlxvYzm6R48iMA&s"
+                                    alt="The deck of my dreams"
+                                    style="width: 250px;height: 250px; position: absolute; bottom: 75%; left: 75%;border-radius: 40px;">
+                                <h1 class="image-text" style="position: absolute; top: 30px;left: 77%;font-size: 20px;">
+                                    My <br>Scandinavian <br> bedroom
+                                </h1>
                             </div>
                         </div>
 
-                        <!-- susbscription button -->
-                        <div class="text-center mb-3">
-                            <button type="submit" class="btn btn-danger w-100 rounded-5 p-3">Continue</button>
-                        </div>
-                        <p class="text-center ">or</p>
-                        <!--susbscription button with Google -->
-                        <div class="text-center">
-                            <button type="button" class="btn btn-outline-dark w-100 rounded-5 p-3">
-                                <i class="fab fa-google"></i> Continue with Google
-                            </button>
-                        </div>
-
-                        <div class="container text-center mt-3">
-                            <p class="text-muted small">
-                                By continuing, you agree to Pinterest’s
-                                <a href="#" class="text-primary text-decoration-underline text-dark">Terms of
-                                    Service</a>
-                                and acknowledge you’ve read our
-                                <a href="#" class=" text-decoration-underline text-dark">Privacy Policy</a>,
-                                <a href="#" class=" text-decoration-underline  text-dark">Notice at collection</a>.
-                            </p>
-
-                            <p class="fw-semibold">
-                                Already a member? <a href="#" class="text-decoration-underline fw-bold text-dark">Log
-                                    in</a>
-                            </p>
+                        <div class="">
+                            <div class="image-containerimage-container-with-text3">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgd1dHzdDUT1GSxZBLKJp9LZJKQ3NGKiNXRw&s"
+                                    alt="Serve my drinks in style"
+                                    style="width:200px;height: 200px;position: absolute;bottom: 40%;left: 75%;border-radius: 40px;">
+                                <h1 class="image-text" style="font-size: 20px;position: absolute; top: 40%; left: 78%;">
+                                    The deck of <br> my dreams
+                                </h1>
+                            </div>
                         </div>
 
-                        <div class="text-center mt-3">
-                            <button type="button" class="btn  w-100 btn-secondary rounded-5 p-3">creat a free business
-                                account
-                            </button>
+                        <div class="">
+                            <div class="image-containerimage-container-with-text4">
+                                <img src="https://images.adsttc.com/media/images/63e3/52b1/42a2/a83f/89d7/130e/newsletter/ad-classics-unite-d-habitation-le-corbusier_42.jpg?1675842241"
+                                    alt="Our bathroom upgrade"
+                                    style="width: 200px;height: 250px;position: absolute;bottom: 20px; left: 70%;border-radius: 40px;">
+                                <h1 class="image-text"
+                                    style="font-size: 25px; position: absolute; bottom: 10%;left: 72%;">
+                                    Our <br> bathroom <br> upgrade
+                                </h1>
+                            </div>
                         </div>
-
-                    </fieldset>
-                </form>
+                    </div>
+                </div>
+                <!-- </div> -->
             </div>
-        </div>
-    </div>
 
-     <!-- Navbar footer -->
-     <nav class="navbar navbar-light bg-white">
-        <div class="container-fluid justify-content-center m-2 text-muted">
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Terms of Service</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Privacy Policy</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Help</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Iphone App</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Android App</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Users</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Collections</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Shopping</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Explore</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Shop</a>
-            <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Non-User Notice</a>
-        </div>
-    </nav>
+            <!-- div foorth -->
+
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col" style="background-color: rgba(218, 165, 32, 0.452); ">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="image" class="w-100 h-auto">
+                    </div>
+                    <div class="col " style="background-color: #e661a441; padding-top: 20%;">
+                        <h1 class="fw-bold mb-3" style="color: chocolate; font-size: 50px;">See it, Make it, Try it, Do
+                            it</h1>
+                        <p class="fs-3" style="color: chocolate;">The best part of Pinterest is discovering <br> new
+                            things and
+                            ideas from people <br> around the world.</p>
+                        <button class="btn btn-danger rounded-5 mt-3 ">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <!-- div fiveth -->
+
+            <div class="container-fluid mybackround-div-five text-center ">
+                <div class="row align-items-center">
+                    <div class="col">
+
+                        <h1 class="text-white" style="font-size: 60px; line-height: 1.5; font-weight: bold;">
+                            Sign up to get <br> your ideas
+                        </h1>
+
+                    </div>
+                    <!-- Formulaire -->
+                    <div class="col mb-0 mt-5 text-start align-items-center" style="margin-right: 200px;">
+                        <form class="w-60 ms-auto p-2 rounded-5 shadow-sm bg-white">
+                            <fieldset class="m-3 w-50  mx-auto ">
+                                <div class="text-center ">
+                                    <img src="data:image/png;base64,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"
+                                        width="50px" height="50px" alt="logo">
+                                    <h2>Welcom to Pinterest</h2>
+                                    <p>find new ideas to try</p>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="mb-3 ">
+                                    <label for="email" class="form-label">Email</label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control rounded-5 p-3" id="email"
+                                            placeholder="Email" style="width: 100px;">
+                                    </div>
+                                </div>
+
+                                <!-- password -->
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control rounded-5 p-3" id="password"
+                                            placeholder="Create a password">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Birthdate -->
+                                <div class="mb-3">
+                                    <label for="dob" class="form-label">Birthdate</label>
+                                    <div class="input-group">
+                                        <input type="date" class="form-control rounded-5 p-3" id="date">
+                                    </div>
+                                </div>
+
+                                <!-- susbscription button -->
+                                <div class="text-center mb-3">
+                                    <button type="submit" class="btn btn-danger w-100 rounded-5 p-3">Continue</button>
+                                </div>
+                                <p class="text-center ">or</p>
+                                <!--susbscription button with Google -->
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-outline-dark w-100 rounded-5 p-3">
+                                        <i class="fab fa-google"></i> Continue with Google
+                                    </button>
+                                </div>
+
+                                <div class="container text-center mt-3">
+                                    <p class="text-muted small">
+                                        By continuing, you agree to Pinterest’s
+                                        <a href="#" class="text-primary text-decoration-underline text-dark">Terms of
+                                            Service</a>
+                                        and acknowledge you’ve read our
+                                        <a href="#" class=" text-decoration-underline text-dark">Privacy Policy</a>,
+                                        <a href="#" class=" text-decoration-underline  text-dark">Notice at
+                                            collection</a>.
+                                    </p>
+
+                                    <p class="fw-semibold">
+                                        Already a member? <a href="#"
+                                            class="text-decoration-underline fw-bold text-dark">Log
+                                            in</a>
+                                    </p>
+                                </div>
+
+                                <div class="text-center mt-3">
+                                    <button type="button" class="btn  w-100 btn-secondary rounded-5 p-3">creat a free
+                                        business
+                                        account
+                                    </button>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navbar footer -->
+            <nav class="navbar navbar-light bg-white">
+                <div class="container-fluid justify-content-center m-2 text-muted">
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Terms of Service</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Privacy Policy</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Help</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Iphone App</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Android App</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Users</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Collections</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Shopping</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Explore</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Shop</a>
+                    <a class="nav-link text-dark  m-1 text-dark text-muted" href="#">Non-User Notice</a>
+                </div>
+            </nav>
 
 
 
@@ -686,49 +834,49 @@
 
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
 
-        let message;
+                let message;
 
-        function regexText() {
-            let BirthDate = document.getElementById("date").value;
-            let regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/
+                function regexText() {
+                    let BirthDate = document.getElementById("date").value;
+                    let regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/
 
-            if (!regex.test(BirthDate)) {
-                message = 'invalid input. your birthdate must be month, day, and year'
-            } else {
-                message = ''
-            }
+                    if (!regex.test(BirthDate)) {
+                        message = 'invalid input. your birthdate must be month, day, and year'
+                    } else {
+                        message = ''
+                    }
 
-        }
-        document.getElementById('email').addEventListener('blur', function () {
-            let userEmail = document.getElementById("email").value;
-            let regex = /^\w+@[a-z]+\.[a-z]{2,3}$/
+                }
+                document.getElementById('email').addEventListener('blur', function () {
+                    let userEmail = document.getElementById("email").value;
+                    let regex = /^\w+@[a-z]+\.[a-z]{2,3}$/
 
-            if (!regex.test(userEmail)) {
-                message = 'Please enter a valid email address.'
-            } else {
-                message = ''
-            }
+                    if (!regex.test(userEmail)) {
+                        message = 'Please enter a valid email address.'
+                    } else {
+                        message = ''
+                    }
 
-        })
+                })
 
-        document.getElementById('password').addEventListener('blur', function () {
-            let password = document.getElementById("password").value;
-            let regex = /^(?=.*\d)(?=.*[a-zA-Z]).{6,}$/
+                document.getElementById('password').addEventListener('blur', function () {
+                    let password = document.getElementById("password").value;
+                    let regex = /^(?=.*\d)(?=.*[a-zA-Z]).{6,}$/
 
-            if (!regex.test(password)) {
-                message = 'Please enter a valid email address.'
-            } else {
-                message = ''
-            }
+                    if (!regex.test(password)) {
+                        message = 'Please enter a valid email address.'
+                    } else {
+                        message = ''
+                    }
 
-        })
+                })
 
-    </script>
+            </script>
 
-</body>
+    </body>
 
-</html>
+    </html>
