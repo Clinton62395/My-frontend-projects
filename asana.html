@@ -15,12 +15,12 @@
     <title>Grille avec Défilement</title>
     <style>
         .navbar {
-            padding: 0px 10px;
+            padding: 0rem .625rem;
             height: auto;
         }
 
         .navbar-brand img {
-            height: 50px;
+            height: 3.125rem;
         }
 
         .bi-check {
@@ -29,19 +29,19 @@
         }
 
         .my-image-logo {
-            width: 50px;
-            height: 200px;
+            width: 3.125rem;
+            height: 12.5rem;
             object-fit: contain;
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 10px;
+            border: .0625rem solid black;
+            border-radius: .625rem;
+            padding: .625rem;
 
 
         }
 
         .image-animaation1 {
             animation: scrollLeft 30s infinite linear;
-            border-radius: 10px;
+            border-radius: .625rem;
 
         }
 
@@ -57,7 +57,7 @@
 
         .image-animaation2 {
             animation: scrollRight 30s infinite linear;
-            border-radius: 10px;
+            border-radius: .625rem;
 
         }
 
@@ -74,11 +74,44 @@
 </head>
 
 <body>
+     <!-- ma nav bar des pages -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <!-- Logo ou nom du site -->
+    <a class="navbar-brand" href="index.html">Netflix</a>
+
+    <!-- Bouton burger sur petits écrans -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenu de la navbar -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="pinterest.html">Pinterest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="asana.html">Asana</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
     <!-- navbar of asana -->
     <nav class="navbar navbar-expand-lg bg-light ">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="#">
-                <img src="asana.png" alt="logo" style="height: 100px;">
+                <img src="asana.png" alt="logo" style="height: 6.25rem;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -124,7 +157,7 @@
     <div class="container-fluid mt-5" style="background-color: rgb(255, 234, 236);">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-sm-2 col-md-4 col-lg-6">
-                <h1 style="color:chocolate; font-weight: bold; font-size: 30px;">Where work connects</h1>
+                <h1 style="color:chocolate; font-weight: bold; font-size: 1.875rem;">Where work connects</h1>
                 <p>Connect work to goals and automate workflows with AI as your teammate.</p>
                 <div>
                     <button class="btn border-warning rounded-5 me-3 p-3 px-5"
@@ -153,12 +186,12 @@
             </div>
             <!-- Logos -->
             <div class="col-md-8 d-flex flex-wrap justify-content-between gap-3">
-                <img src="ama.png" alt="Amazon logo" class="company-logo img-fluid" style="max-width: 100px;">
-                <img src="accentur.png" alt="Accenture logo" class="company-logo img-fluid" style="max-width: 100px;">
+                <img src="ama.png" alt="Amazon logo" class="company-logo img-fluid" style="max-width: 6.25rem;">
+                <img src="accentur.png" alt="Accenture logo" class="company-logo img-fluid" style="max-width: 6.25rem;">
                 <img src="johonson.png" alt="Johnson & Johnson logo" class="company-logo img-fluid"
-                    style="max-width: 100px;">
-                <img src="dell.png" alt="Dell logo" class="company-logo img-fluid" style="max-width: 100px;">
-                <img src="merck.png" alt="Merck logo" class="company-logo img-fluid" style="max-width: 100px;">
+                    style="max-width: 6.25rem;">
+                <img src="dell.png" alt="Dell logo" class="company-logo img-fluid" style="max-width: 6.25rem;">
+                <img src="merck.png" alt="Merck logo" class="company-logo img-fluid" style="max-width: 6.25rem;">
             </div>
         </div>
     </div>
@@ -278,8 +311,9 @@
             <div class="col mt-5">
                 <h3>Asana connects with the enterprise tools your organization <br> already uses, right out of the box.
                 </h3>
-                <button class="btn btn-dark rounded-5 fs-5 fw-bold px-4 py-2 mb-2 text-white mt-3">See all
-                    integrations</button>
+                <button class="btn btn-dark rounded-5 fs-5 fw-bold px-4 py-2 mb-2 text-white mt-3">See all integrations
+                    
+                </button>
             </div>
 
         </div>
@@ -347,7 +381,7 @@
     <div class="container mt-5">
         <div class="row ">
             <div class="col-sm-2 col-md-4 col-lg-6 justify-content-center align-items-start">
-                <h1 style="color:black; font-weight: bolder; font-size: 50px;">The world’s top companies <br> trust
+                <h1 style="color:black; font-weight: bolder; font-size: 3.125rem;">The world’s top companies <br> trust
                     Asana.</p>
                     <div>
 
